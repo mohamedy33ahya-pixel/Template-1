@@ -1,0 +1,1359 @@
+/* 
+==========================
+titles
+==========================
+*/
+*,*:after,*:before {
+margin: 0;
+padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* 
+==========================
+titles-2
+==========================
+*/
+.main-head {
+    padding: 20px 0;
+    overflow: hidden;
+   border-bottom:  1px solid black;
+   height: 690px;
+   background-image: url(../images/background1.jpg);
+   background-size: cover;
+   position: relative;
+}
+.main-head .cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity:0.5;
+    z-index: 0;
+    
+}
+.container {
+    width: 80%;
+    margin: auto;
+    position: relative;
+     z-index: 3;
+}
+.container input,.container label{
+    position: absolute;
+    top: -5px;
+    right:10px;
+    
+}
+.container input{
+    display: none;
+}
+.container label{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('../images/open.png') no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.container input:checked ~ .titles{
+    display: block;
+}
+.container input:checked ~ label{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('../images/close.png') no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.main-head .container .text-logo{
+    width: 50%;
+    float: left;
+    font-size: 30px;
+    color: white;
+    z-index: 2;
+}
+.main-head .container .titles{
+    width: 50%;
+    float: left;
+    list-style: none;
+}
+.main-head .container .titles .tit{
+    display: inline-block;
+}
+.main-head .container .titles .tit a{
+    display: block;
+    font-size: 20px;
+    padding: 5px 5px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.main-head .container .titles .tit a:hover{
+    background-color: dodgerblue !important;
+    color: white !important;
+}
+.main-head .container .titles .tit .tit1{
+text-decoration-color: rgb(10, 105, 248);
+text-decoration: underline;
+color: rgb(10, 105, 248);
+}
+/*mwdia for titles*/
+@media (min-width:1450px) {
+    .container label{
+        display: none;
+    }
+}
+@media (max-width:1449px) {
+    .main-head .container .text-logo{
+    width: 30%;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    
+}
+
+.main-head .container .titles{
+    width: 100%;
+    float:left;
+    display: none;
+}
+.main-head .container .titles .tit{
+    display: block;
+    text-align: center;
+}
+.main-head .container .titles .tit a:hover{
+    background-color: dodgerblue ;
+    color: white ;
+}
+}
+/* 
+==========================
+home
+==========================
+*/
+.home{
+    text-align: center;
+    padding-top: 300px;
+    position: relative;
+    z-index: 2;
+}
+.home .cont-title{
+    font-size: 50px;
+    color: white;
+    padding-bottom:10px ;
+}
+.home .con-para{
+    font-size: 17px;
+    color: white;
+    padding-bottom:10px ;
+}
+.home .cont-btn{
+    padding: 15px 30px;
+    color:black;
+    background: white;
+    border: 0;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.home .cont-btn1{
+    padding: 15px 30px;
+    color: white;
+    background: rgb(0, 157, 255);
+    border: 0;
+    cursor: pointer;
+}
+/*mwdia for home*/
+@media (max-width:775px) {
+    .home .con-para{
+    font-size: 12px;
+    }
+    .home .cont-title{
+    font-size: 30px;
+    }
+    .home .cont-btn{
+    padding: 15px 20px;
+    }
+    .home .cont-btn1{
+    padding: 15px 20px;
+    }
+}
+@media (max-width:567px) {
+    .home .con-para{
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+    .home .cont-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+    }
+    .home .cont-btn{
+    padding: 12px 15px;
+    }
+    .home .cont-btn1{
+    padding: 12px 15px;
+    }
+}
+
+/* 
+==========================
+Website
+==========================
+*/
+.web{
+height: auto;
+padding: 60px 0px;
+overflow: hidden;
+}
+.web .contain-title{
+    font-size: 40px;
+    text-align: center;
+}
+.web .contain .part{
+    margin-top: 30px;
+    width: 25%;
+    margin-left: 6.25%;
+    float: left;
+    border: 1px solid #888;
+    box-sizing: border-box;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.web .part .icon{
+    font-size: 60px;
+    color: rgb(13, 148, 246);
+    margin-bottom: 35px;
+}
+.web .line{
+    width: 2%;
+    margin: auto;
+    color:rgb(13, 148, 246);
+    height: 4px;
+    border: none;
+    background-color:rgb(13, 148, 246) ;
+    margin-top: 11px;
+}
+.web .part .part-title{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.web .part .part-para{
+    font-size: 15px;
+    margin-top: 20px;
+}
+.web .part .part-address{
+    position: relative;
+    top: 20px;
+    color: dodgerblue;
+}
+/*mwdia for web*/
+@media (max-width:768px) {
+    .web .contain .part{
+        width: 47%;
+    }
+}
+@media (max-width:575px) {
+    .web .contain .part{
+        width: 100%;
+        float: none;
+    }
+    .web .contain-title{
+    font-size: 30px;
+    }
+}
+/* 
+==========================
+featured
+==========================
+*/
+.featured{
+    clear:both;
+    background: rgb(248, 244, 244);
+    overflow: hidden;
+    margin-top: 15px;
+    
+}
+.featured .featured-title{
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 40px;
+    
+}
+.featured .line2{
+    width: 2%;
+    margin: auto;
+    color:rgb(13, 148, 246);
+    height: 4px;
+    border: none;
+    background-color:rgb(13, 148, 246) ;
+    margin-top: 40px;
+}
+.feature div{
+    width: 25%;
+    margin-left: 6.25%;
+    float: left;
+    margin-top: 50px;
+    position: relative;
+}
+.feature div img{
+    width: 100%;
+}
+.feature div h3{
+    font-size: 20px;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:rgb(13, 148, 246);
+    z-index: 1;
+    opacity: 0;
+}
+.feature div .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0;
+}
+.feature div span{
+    font-size: 18px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color: white;
+    
+}
+.feature div .feat-btn{
+    padding: 9px 9px;
+    color:white;
+    background:rgb(0, 157, 255);
+    border: 0;
+    margin-right: 10px;
+    cursor: pointer;
+    position: absolute;
+    top:60%;
+    left:45%;
+    transform:translate(-50%,-50%);
+    opacity: 0;
+
+}
+.feature div .feat-btn1{
+    padding: 9px 9px;
+    color: white;
+    background: rgb(0, 157, 255);
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top:60%;
+    left:55%;
+    transform:translate(-50%,-50%);
+    opacity: 0;
+}
+.feature div:hover h3,.feature div:hover .feat-btn,.feature div:hover .feat-btn1 {
+    opacity: 1;
+}
+.feature div:hover .overlay{
+    opacity: 0.5;
+}
+/*mwdia for featured*/
+@media (max-width:768px) {
+    .feature div{
+    width: 49%;
+    margin-left: 1%;
+    }
+    
+}
+@media (max-width:575px) {
+    .feature div{
+        width: 100%;
+    }
+}
+/* 
+==========================
+offer
+==========================
+*/
+.offer{
+height: auto;
+padding: 80px 0px;
+clear: both;
+overflow: hidden;
+}
+.offer .off-ico{
+    transition: 0.3s;
+    position: relative;
+}
+.offer .off .off-title{
+    font-size: 30px;
+    text-align: center;
+}
+.offer .off .line3{
+    width: 2%;
+    margin: auto;
+    color:rgb(13, 148, 246);
+    height: 4px;
+    border: none;
+    background-color:rgb(13, 148, 246) ;
+    margin-top: 2px;
+}
+.offer .off .off-ico{
+    width: 25%;
+    margin-left: 6.25%;
+    float: left;
+    border: 0.1px solid #f3f3f3;
+    margin-top: 50px;
+    padding: 13px 0px 35px 10px ;
+    position: relative;
+}
+.offer .off .fa-solid {
+    font-size: 30px;
+    color: rgb(13, 148, 246);
+    float: left;
+    margin-right: 15px;
+}
+.offer .off .off-titl{
+    color: black;
+    font-size: 20px;
+    margin-left: 17px;
+}
+.offer .off .off-para{
+    font-size: 15px;
+    margin-top: 10px;
+    width: 170px;
+    margin-left: 46px;
+    line-height: 1.5;
+    padding-top: 5px;
+}
+.offer .off .off-ico:hover{
+    background-color: black;
+}
+.offer .off .off-ico:hover .off-titl{
+    color: white;
+}
+.offer .off .off-ico:hover .off-para{
+    color:#888;
+}
+/*mwdia for featured*/
+@media (max-width:768px) {
+   .offer .off .off-ico {
+    width: 38.5%;
+    }  
+}
+@media (max-width:575px) {
+    .offer .off .off-ico {
+        width: 100%;
+        margin-left: 0;
+        box-sizing: border-box;
+    }
+
+   .offer .off .off-titl {
+        text-align: center;
+        margin-left: 0;
+        padding-right:135px ;
+    }
+    .offer .off .fa-solid{
+        text-align: center;
+        padding-left: 135px ;
+    }
+
+    .offer .off .off-para {
+        width: 170px;
+        margin: 10px auto 0;
+        line-height: 1.5;
+        padding-top: 5px;
+        text-align: left;
+    } 
+}
+/* 
+==========================
+choose
+==========================
+*/
+.choose{
+height: auto;
+padding: 80px 0px;
+margin-top: 20px;
+clear: both;
+background: rgb(248, 244, 244);
+}
+.choose .choo .choo-title{
+    font-size: 30px;
+    text-align: left;
+    margin-left: 200px;
+}
+.choose .choo .line4{
+    width: 2%;
+    margin-left: 200px;
+    color:rgb(13, 148, 246);
+    height: 4px;
+    border: none;
+    background-color:rgb(13, 148, 246) ;
+    margin-top: 2px;
+}
+ .choose .choo .choo-para{
+    font-size: 15px;
+    margin-top: 20px;
+    width: 370px;
+    margin-left: 200px;
+    line-height: 1.5;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    color:#525050;
+}
+.choose .choo .ele{
+    margin-left: 203px;
+    color:#525050;
+    list-style: none;
+}
+.choose .choo .ele-item{
+    margin-bottom: 12px;
+
+}
+.choose .choo .ele-item::before{
+content: "✓";
+border: 2px solid #6aa8ff;
+border-radius: 50%;
+margin-right: 5px;
+padding: 2px 5px;
+margin-bottom: 5px;
+}
+.choo{
+    position: relative;
+}
+
+.choose-im{
+    position: absolute;
+    top: -5px;
+    right: 90px;
+    width: 30%;
+    height: auto;
+}
+
+.choose-im img{
+    width: 100%;
+}
+
+.choo-title,
+.line4,
+.choo-para,
+.ele{
+    width: 50%;
+}
+/*mwdia for choose*/
+@media (max-width:851px) {
+    .choose .choo .line4{
+        margin-left: 120px;
+        font-size: 17px;
+    }
+    .choose .choo .choo-title{
+        margin-left: 20px;
+        font-size: 17px;
+    }
+    .choose .choo .choo-para{
+        margin-left: 20px;
+        font-size: 10px;
+    }
+    .choose .choo .ele{
+        margin-left: 20px;
+    }
+    .choose-im{
+    position: absolute;
+    top: 70px;
+    right: 40px;
+    width: 36%;
+}
+
+.choose-im img{
+    width: 100%;
+}
+}
+@media (max-width:576px){
+    .choose .choo .line4{
+        margin-left: 40px;
+    }
+    .choose .choo .choo-title{
+        margin-left: 20px;
+    }
+    .choose .choo .choo-para{
+        margin-left: 17px;
+        width: 350px;
+    }
+    .choose .choo .ele{
+        margin-left: 20px;
+    }
+    .choose-im{
+    position: absolute;
+    top: 180px;
+    right: 15px;
+    width: 40%;
+    height: 150%;
+    
+}
+
+.choose-im img{
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+
+}
+}
+/* 
+==========================
+world
+==========================
+*/
+.world{
+    padding: 40px 0;
+    height: auto;
+}
+.world .wor{
+    height: auto;
+    position: relative;
+}
+.world .wor img{
+    display: block;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.world .wor .cov{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    background: black;
+    opacity:0.5;
+    z-index: 1;
+    
+}
+.world .wor .diff{
+    color: white;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    z-index: 2;
+    position: relative;
+    bottom: 131px;
+    line-height: 1.5;
+}
+.world .wor .diff .fa-users,.fa-trophy,.fa-mug-hot,.fa-file{
+    color: #6aa8ff;
+    font-size: 25px;
+}
+/*mwdia for world*/
+@media (max-width:576px){
+    .world .wor .diff{
+        left: 8px;
+    }
+.world .wor .diff .fa-users,.fa-trophy,.fa-mug-hot,.fa-file{
+    
+    font-size: 16px;
+}
+}
+/* 
+==========================
+princing
+==========================
+*/
+.princ{
+height: auto;
+padding: 5px 0px;
+overflow: hidden;
+clear: both;
+margin-bottom: 70px;
+}
+.princ .prin{
+    height: 20%;
+}
+.princ .prin .prin-title{
+    font-size: 40px;
+    text-align: center;
+}
+.princ .prin .line5{
+    width: 2%;
+    margin: auto;
+    color:rgb(13, 148, 246);
+    height: 4px;
+    border: none;
+    background-color:rgb(13, 148, 246) ;
+    margin-top: 7px;
+}
+.princ .prin .pr{
+    margin-top: 30px;
+    width: 25%;
+    margin-left: 6.25%;
+    float: left;
+    border: 1px solid #888;
+    box-sizing: border-box;
+    padding: 60px 0;
+    text-align: center;
+}
+.princ .prin .pr .pr-titl{
+    color: rgb(173 173 172);
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.princ .prin .pr .pr-title{
+    border-radius: 50%;
+    border: 1px solid dodgerblue;
+    line-height: 1.5;
+    margin: 0 auto 10px auto;
+    width: 28%;
+    padding: 15px 0px;
+}
+.princ .prin .pr .pr-para{
+    line-height: 1.5;
+    font-size: 15px;
+    color: rgb(173 173 172);
+}
+.princ .prin .pr .pr-btn{
+    margin-top: 15px;
+    padding: 15px 30px;
+    color: dodgerblue;
+    background: white;
+    border: 1px solid dodgerblue;
+    cursor: pointer;
+}
+/*mwdia for princ*/
+@media (max-width:768px){
+    .princ .prin .prin-title{
+        font-size: 35px;
+    }
+    .princ .prin .pr .pr-title {
+    border-radius: 50%;
+    border: 1px solid dodgerblue;
+    line-height: 1.5;
+    margin: 0 auto 10px auto;
+    width: 53%;
+    padding: 1px 0px;
+}
+}
+@media (max-width:577px) {
+    .princ .prin .pr .pr-title {
+    border-radius: 50%;
+    border: 1px solid dodgerblue;
+    line-height: 1.5;
+    margin: 0 auto 10px auto;
+    width: 70%;
+    padding: 1px 0px;
+}
+    .princ .prin .pr .pr-btn {
+    margin-top: 15px;
+    padding: 10px 3px;
+    color: dodgerblue;
+    background: white;
+    border: 1px solid dodgerblue;
+    cursor: pointer;
+}
+}
+/* 
+==========================
+john
+==========================
+*/
+.john{
+    height: auto;
+    padding: 60px 0;
+}
+.john .jo{
+    position: relative;
+}
+.john .jo > img{
+    display: block;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+.john .jo .cov{
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.5;
+    height: 400px;
+    width: 100%;
+}
+.defs{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.john .jo .def{
+    display: flex;
+     align-items: center;   
+  position: absolute; 
+    top: 20px; 
+    left: 220px;
+}
+.john .jo .def1{
+    display: flex;
+     align-items: center;   
+  position: absolute; 
+    top: 20px; 
+    left: 640px;
+}
+.john .jo .def img{
+    display: block;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.john .jo .def1 img{
+    display: block;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.def .def-title{
+    color: white;
+    margin-right: 10px;
+}
+.def1 .def-title{
+    color: white;
+    margin-right: 10px;
+}
+.def-title span{
+    color: #6195ff;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.info{
+  display: block; 
+}
+
+.info .def-para{
+    margin-top: 210px;
+    padding-right: 100px;
+    max-width: 400px;
+    line-height: 1.6;
+    color: white;
+    position: relative;
+    top: 2px;
+    left: -210px;
+}
+/*mwdia for john*/
+@media (max-width:768px){
+   
+.john .jo .def{
+        left: 50px;
+        top: 20px;
+    }
+
+    .john .jo .def1{
+        left: 330px;
+        top: 20px;
+    }
+
+    .info .def-para{
+        max-width: 180px;
+        padding-right: 0;
+        margin-top: 210px;
+        left: -150px;
+    }
+}
+@media (max-width: 576px) {
+    
+  .john .jo .def,
+    .john .jo .def1 {
+        position: absolute;
+        top: 120px;
+        display: flex;
+        align-items: center;
+        width: 240px;
+    }
+
+    .john .jo .def {
+        left: 35px;
+    }
+
+    .john .jo .def1 {
+        left: 200px;
+        margin-top: 0;
+    }
+
+    .john .jo .def img,
+    .john .jo .def1 img {
+        width: 50px;
+        height: 50px;
+        
+    }
+
+    .def .def-title,
+    .def1 .def-title {
+        font-size: 13px;
+        
+    }
+
+    .def-title span {
+        font-size: 9px;
+    }
+
+    .info .def-para {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        margin-top: 0;
+        padding: 0;
+        width: 180px;
+        max-width: 180px;
+        font-size: 11px;
+        line-height: 1.4;
+    }
+}
+/* 
+==========================
+team
+==========================
+*/
+.team {
+    clear:both;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.team .tea-title{
+    text-align: center;
+    font-size: 38px;
+}
+.team .line6{
+    width: 2%;
+    height: 4px;
+    color:rgb(13, 148, 246) ;
+    margin: auto;
+    border: none;
+    background-color:rgb(13, 148, 246) ;
+    margin-top: 3px;
+}
+
+.team .tea .te {
+    width: 25%;
+    margin-left: 6.25%;
+    float: left;
+    margin-top: 50px;
+    position: relative;
+    background-color: rgb(225, 224, 224);
+    padding: 30px 14px 75px 14px ;
+}
+.team .tea .te img{
+    width: 100%; 
+    display: block;
+    
+}
+.te-im{
+    position: relative;
+}
+.team .tea .te::after{
+    content: "";
+    background-color: #000;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 2;
+}
+
+.team .tea .te .tel{
+    display: grid;
+    position: absolute;
+    top: 30px;
+    right: 14px;
+    width: 10%;
+    height: 50%;
+    background-color: white;
+    opacity: 0;
+    z-index: 3;
+}
+.team .tea .te .tel .te-btn{
+position: relative;
+text-align: center;
+top:17px;
+padding: 9px 9px;
+    color: white;
+    background: rgb(0, 157, 255);
+    border: 0;
+    cursor: pointer;
+    left: 3px;
+}
+.team .tea .te .te-titl,
+.team .tea .te .te-titl1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    color: white;
+    text-align: center;
+}
+
+.team .tea .te .te-titl{
+    top: 87%;
+    color: #000;
+}
+
+.team .tea .te .te-titl1{
+    top: 93%;
+    color: #888;
+}
+.team .tea .te:hover::after{
+    opacity: 0.5;
+}
+.team .tea .te:hover .tel{
+    opacity: 1;
+}
+.team .tea .te:hover .te-titl{
+    
+    color: white;
+}
+
+.team .tea .te:hover .te-titl1{
+    
+    color: #4b81ec;
+}
+/*mwdia for team*/
+@media (max-width:768px) {
+    .team .tea .te {
+    width: 40%;
+    margin-left: 6.66%;
+    float: left;
+    box-sizing: border-box;
+}
+}
+@media (max-width:576px) {
+    .team .tea .te {
+    width: 100%;
+    float: none;
+    margin-left: 0%;
+    box-sizing: border-box;
+}
+}
+/* 
+==========================
+Recent
+==========================
+*/
+.recent{
+    padding: 50px 0;
+    
+    height: 500px;
+    margin-top: 85px;
+    margin-bottom: 50px;
+    clear: both;
+    background-color: rgb(248, 244, 244) ;
+    overflow: hidden;
+    
+}
+.recent .recent-title{
+ text-align: center;
+    font-size: 38px;   
+}
+.recent .line7{
+    width: 2%;
+    height: 4px;
+    color:rgb(13, 148, 246) ;
+    margin: auto;
+    border: none;
+    background-color:rgb(13, 148, 246) ;
+    margin-top: 3px;
+}
+.recent .rece{
+    height: auto;
+    position: relative;
+    margin-bottom: 20px;
+    
+}
+.recent .rece .rec {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    width: 25%;
+    height: 35%;
+    margin-left: 6.25%;
+    float: left;
+    border: 0.1px solid #ebe9e9;
+    box-sizing: border-box;
+    padding: 0px 0px 25px;
+    text-align: left;
+}
+.recent .rece .rec img{
+    width: 100%;
+    height: 25%;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.recent .rece .rec .met{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.recent .rece .rec .met .fa-user,.fa-clock,.fa-comments{
+    color:#4b81ec;
+}
+.recent .rece .rec .met .fa-clock{
+    margin-left:5px ;
+}
+.recent .rece .rec .met .fa-comments{
+    margin-left:5px ;
+}
+.recent .rece .rec .rec-title{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.recent .rece .rec .rec-para{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    max-width: 350px;
+    color:#888;
+}
+.recent .rece .rec .rec-address{
+    color: #6195ff;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+/*mwdia for recent*/
+@media (max-width:768px) {
+    .recent{
+        height:1000px ;
+    }
+    .recent .rece .rec {
+    width: 40%;
+    margin-left: 6.66%;
+    float: left;
+    box-sizing: border-box;
+}
+}
+@media (max-width:576px) {
+    .recent{
+        height:1450px ;
+    }
+    .recent .rece .rec {
+    width: 100%;
+    float: none;
+    margin-left: 0%;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+}
+/* 
+==========================
+touch
+==========================
+*/
+.touch{
+     padding: 50px 0;
+    height: 500px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    clear: both;
+    overflow: hidden;
+}
+.touch .tou-title{
+ text-align: center;
+    font-size: 38px;   
+}
+.touch .line8{
+    width: 2%;
+    height: 4px;
+    color:rgb(13, 148, 246) ;
+    margin: auto;
+    border: none;
+    background-color:rgb(13, 148, 246) ;
+    margin-top: 3px;
+}
+.touch .tou{
+    height: auto;
+    position: relative;
+     
+}
+.touch .tou .tou-icon .item{
+    float: left;
+    text-align: center;
+    width: 25%;
+    box-sizing: border-box;
+    margin-left: 6.25%;
+    margin-top: 50px;
+}
+.touch .tou .tou-icon .item i{
+    color:rgb(13, 148, 246) ;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.touch .tou .tou-icon .item p{
+    color:#888;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.touch .tou .fo form{
+    text-align: center;
+     width: 50%;
+    margin: 40px auto 0;
+    clear: both;
+}
+.touch .tou .fo .inp{
+    width: 78%;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 40px auto 10px auto;
+}
+.touch .tou .fo .inp input[type=text]{
+    float: left;
+    padding: 10px 60px ;
+    background-color: #e7e7e7;
+    border: none;
+    text-align: center;
+}
+.touch .tou .fo .inp input[type=email]{
+    float: right;
+    padding: 10px 60px ;
+    background-color: #e7e7e7;
+    border: none;
+    text-align: center;
+}
+.touch .tou .fo  form .sub{
+    width: 100%;
+    border: none;
+    padding:10px 0 ;
+    background-color: #e7e7e7;
+    text-align: left;
+}
+.touch .tou .fo  form textarea{
+    width: 100%;
+    height: 100px;
+    border: none;
+    margin-top: 10px;
+    padding:1px 0 ;
+    background-color: #e7e7e7;
+    text-align: left;
+}
+.touch .tou .fo  form input[type=submit]{
+    width: 20%;
+    margin-top: 10px;
+    padding:15px 15px ;
+    color: white;
+    background-color: rgb(13, 148, 246);
+    border: 0;
+    cursor: pointer;
+}
+/*mwdia for touch*/
+@media (max-width:768px) {
+    .touch .tou .fo form{
+    text-align: center;
+     width: 40%;
+    }
+    .touch .tou .fo .inp input[type=text]{
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px 30px ;
+    }
+    .touch .tou .fo .inp input[type=email]{
+    padding: 10px 33px ;
+    }
+    .touch .tou .fo  form input[type=submit]{
+    width: 45%;
+    margin-top: 10px;
+    padding:25px 24px ;
+}
+}
+@media (max-width:576px){
+    .touch .tou .tou-icon .item{
+        font-size:  10px;
+    }
+
+    .touch .tou .fo form{
+    text-align: center;
+     width: 40%;
+    }
+    .touch .tou .fo .inp{
+        text-align: left;
+    }
+    .touch .tou .fo .inp input[type=text]{
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 10px 4px ;
+    }
+    .touch .tou .fo .inp input[type=email]{
+    padding: 10px 33px ;
+    }
+    .touch .tou .fo  form input[type=submit]{
+    width: 70%;
+    margin-top: 10px;
+    padding:18px 19px ;
+}
+}
+/* 
+==========================
+Right
+==========================
+*/
+.right{
+     padding: 50px 0;
+    height: 200px;
+    margin-top: 40px;
+    clear: both;
+    overflow: hidden;
+    background-color: #000;
+}
+.right .right-title{
+    margin-top: 15px;
+ text-align: center;
+    font-size: 38px; 
+    color: white;  
+}
+.right .rig .rig-icon {
+    text-align: center;
+    margin-top: 25px;
+}
+.right .rig .rig-icon .rig-btn {
+    padding: 13px 15px;
+    color: white;
+    margin: 20px 9px;
+    background: rgb(0, 157, 255);
+    border: 0;
+    cursor: pointer;
+}
+.right .rig .rig-para{
+ text-align: center;
+    font-size: 13px;
+    margin-top: 30px; 
+    color:#888;  
+}
+.right .rig .rig-para span{
+    color: #6195ff;
+}
+/*mwdia for right*/
+@media (max-width:768px){
+    .right .rig .rig-para{
+    font-size: 7px;
+}
+.right .rig .rig-icon .rig-btn {
+    padding: 5px 5px;
+}
+}
