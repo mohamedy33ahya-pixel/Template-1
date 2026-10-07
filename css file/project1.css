@@ -1357,3 +1357,376 @@ Right
     padding: 5px 5px;
 }
 }
+/*====================
+=======================
+*/
+/* =========================
+   TABLET
+========================= */
+@media (max-width:768px){
+
+    .container{
+        width:90%;
+    }
+
+    /* Home */
+    .home .cont-title{
+        font-size:35px;
+    }
+
+    .home .con-para{
+        font-size:14px;
+    }
+
+    /* Website */
+    .web .contain .part{
+        width:45%;
+        margin-left:3.33%;
+        box-sizing:border-box;
+    }
+
+    /* Featured */
+    .feature div{
+        width:48%;
+        margin-left:1%;
+    }
+
+   
+
+    /* Choose */
+    .choose .choo .choo-title,
+    .choose .choo .choo-para,
+    .choose .choo .ele,
+    .choose .choo .line4{
+        margin-left:20px;
+    }
+
+    .choose-im{
+        position:static;
+        width:60%;
+        margin:30px auto 0;
+    }
+
+    /* World */
+    .world .wor .diff{
+        display:flex;
+        justify-content:center;
+        gap:50px;
+        flex-wrap:wrap;
+        bottom:130px;
+    }
+
+    .world .wor .diff div{
+        text-align:center;
+    }
+
+    /* Pricing */
+    .princ .prin .pr{
+        width:45%;
+        margin-left:3.33%;
+        box-sizing:border-box;
+    }
+
+   /* =========================
+   John - Tablet
+========================= */
+.john .jo > img,
+.john .jo .cov{
+    height:550px;
+}
+
+.john .jo{
+    position:relative;
+}
+
+.defs{
+    position:absolute;
+    top:50px;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:flex-start;
+}
+
+.john .jo .def,
+.john .jo .def1{
+    position:static;
+    display:block;
+    width:40%;
+}
+
+.john .jo .def img,
+.john .jo .def1 img{
+    width:70px;
+    height:70px;
+    margin-bottom:15px;
+}
+
+.def .def-title,
+.def1 .def-title{
+    color:white;
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+.info .def-para{
+    position:static;
+    margin-top:0;
+    padding:0;
+    max-width:100%;
+    color:white;
+    line-height:1.6;
+}
+
+    /* Team */
+    .team .tea .te{
+        width:45%;
+        margin-left:3.33%;
+        box-sizing:border-box;
+    }
+
+    /* Recent */
+    .recent{
+        height:auto;
+    }
+
+    .recent .rece .rec{
+        width:45%;
+        margin-left:3.33%;
+        box-sizing:border-box;
+    }
+
+    /* Touch */
+    .touch{
+        height:auto;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width:576px){
+
+    .container{
+        width:95%;
+    }
+
+    /* Titles */
+    .web .contain-title,
+    .featured .featured-title,
+    .offer .off-title,
+    .choo-title,
+    .prin-title,
+    .tea-title,
+    .recent-title,
+    .tou-title{
+        font-size:24px;
+    }
+
+    .line,
+    .line2,
+    .line3,
+    .line4,
+    .line5,
+    .line6,
+    .line7,
+    .line8{
+        width:40px;
+    }
+
+    /* Home */
+    .home .cont-title{
+        font-size:24px;
+    }
+
+    .home .con-para{
+        font-size:12px;
+    }
+
+    .home .cont-btn,
+    .home .cont-btn1{
+        padding:12px 15px;
+    }
+
+    /* Website */
+    .web .contain .part{
+        width:100%;
+        margin-left:0;
+        float:none;
+    }
+
+    /* Featured */
+    .feature div{
+        width:100%;
+        margin-left:0;
+        float:none;
+    }
+
+    /* Offer */
+    .offer .off .off-title{
+        text-align: center;
+        margin-left: 85px;
+    }
+    .offer .off .off-ico{
+        width:100%;
+        margin:15px 0;
+        padding:20px;
+        text-align:center;
+        box-sizing:border-box;
+    }
+
+    .offer .off .fa-solid{
+        float:none;
+        display:block;
+        margin:0 auto 15px;
+        padding:0;
+    }
+
+    .offer .off .off-titl{
+        margin:0;
+        padding:0;
+        font-size:25px;
+    }
+
+    .offer .off .off-para{
+        width:100%;
+        margin:10px auto 0;
+        text-align:center;
+    }
+    
+
+    /* Choose */
+    .choose-im{
+        position:static;
+        width:80%;
+        margin:20px auto;
+        height:auto;
+    }
+
+    .choose .choo .choo-title,
+    .choose .choo .choo-para,
+    .choose .choo .ele,
+    .choose .choo .line4{
+        margin-left:15px;
+        width:auto;
+    }
+
+    .choose .choo .choo-para{
+        width:auto;
+    }
+
+    /* World */
+    .world .wor img,
+    .world .wor .cov{
+        height:300px;
+    }
+
+    .world .wor .diff{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:30px;
+        bottom:220px;
+        text-align:center;
+    }
+
+    .world .wor .diff div{
+        width:40%;
+    }
+
+    .world .wor .diff h2{
+        font-size:20px;
+    }
+
+    .world .wor .diff p{
+        font-size:13px;
+    }
+
+    /* Pricing */
+    .princ .prin .pr{
+        width:100%;
+        margin-left:0;
+        float:none;
+    }
+
+    /* =========================
+   John - Mobile
+========================= */
+.john .jo > img,
+.john .jo .cov{
+    height:850px;
+}
+
+.defs{
+    position:absolute;
+    top:40px;
+    left:0;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:40px;
+}
+
+.john .jo .def,
+.john .jo .def1{
+    position:static;
+    width:85%;
+    display:block;
+    text-align:center;
+}
+
+.john .jo .def img,
+.john .jo .def1 img{
+    width:70px;
+    height:70px;
+    margin:0 auto 15px;
+    display:block;
+}
+
+.def .def-title,
+.def1 .def-title{
+    font-size:16px;
+    color:white;
+    margin-bottom:15px;
+}
+
+.def-title span{
+    font-size:12px;
+}
+
+.info .def-para{
+    position:static;
+    width:100%;
+    max-width:100%;
+    margin-top:10px;
+    padding:0;
+    font-size:13px;
+    line-height:1.7;
+    color:white;
+    text-align:center;
+}
+    /* Team */
+    .team .tea .te{
+        width:100%;
+        margin-left:0;
+        float:none;
+    }
+
+    /* Recent */
+    .recent{
+        height:auto;
+    }
+
+    .recent .rece .rec{
+        width:100%;
+        margin-left:0;
+        float:none;
+    }
+
+    /* Touch */
+    .touch{
+        height:auto;
+    }
+}
